@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,700');
+
+body{
+  font-size: 18px;
+}
+.font-one {
+  background-color: #F5F5F5;
+  font-family: 'Hind Vadodara', sans-serif;
+  margin-bottom: 2em;
+}
+.font-one .text h1{
+font-size: 18px;
+font-weight: 300;
+
+}
+
+.font-one .user {
+  font-size: 13px;
+  font-weight: 500;
+  color: #DC143C;
+}
+.font-one .date{
+  font-size: 13px;
+  font-weight: 300;
+}
+
+
+.font-two {
+  background-color: #F5F5F5;
+  font-family: 'Noto Serif JP', sans-serif;
+  margin-bottom: 2em;
+}
+.font-two .text {
+padding-bottom: 10px;
+}
+.font-two .text h1{
+font-size: 20px;
+}
+
+.font-two .user {
+  font-size: 13px;
+font-weight: 700;
+}
+.font-two .date{
+  font-size: 13px;
+  font-style: italic;
+}
+
+#main{
+  width:45%;
+   float: left;
+   margin-right: 2em;
+}
+#main2{
+   float: left;
+  width: 50%;
+}
+.row:after {
+
+    display: table;
+    clear: both;
+}
