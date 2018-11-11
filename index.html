@@ -7,7 +7,18 @@
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
-	
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+		authDomain: "guoguo-a13d6.firebaseapp.com",
+		databaseURL: "https://guoguo-a13d6.firebaseio.com",
+		projectId: "guoguo-a13d6",
+		storageBucket: "",
+		messagingSenderId: "242075501112"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="no-user">
@@ -21,6 +32,7 @@
 				<input type="password" id="password" placeholder="Password">
 				<button id="sign-up">Sign Up</button>
 				<button id="login">Log In</button>
+                <button id="google-login">Log In With Google</button>
 			</div>
 			<div id="user-info">
 				<span id="display-name"></span>
