@@ -1,8 +1,4 @@
-
-
-
 /*desktop */
-
 @media only screen and (max-width: 1600px) {
 	body {
 		background: green;
@@ -14,7 +10,6 @@
 }
 
 /*tablet*/
-
 @media only screen and (max-width: 960px) {
 	body {
 		background: yellow;
@@ -26,7 +21,6 @@
 }
 
 /*mobile*/
-
 @media only screen and (max-width: 480px) {
 	body {
 		background: orange;
