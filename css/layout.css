@@ -23,7 +23,7 @@ ul.demo {
 	grid-row: 1;
 	font-family: 'times';
 	font-size: 22px;
-	/*background-color: Lavender;*/
+	background-color: Lavender;
 }
 
 	
@@ -33,7 +33,7 @@ ul.demo {
 #sidebar {
 	grid-area:sidebar;
 
-	/*background-color: lightcyan*/
+	background-color: lightcyan;
 }
 
 #main { 
