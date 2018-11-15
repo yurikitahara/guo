@@ -71,4 +71,9 @@ ul.demo {
 			"sidebar sidebar sidebar"
 			"footer footer footer";
 	}
+@media only screen and (max-width: 1600px) {
+	body {
+		background: green;
+	}
+
 	}
