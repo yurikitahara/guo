@@ -1,8 +1,4 @@
-ul.demo {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+<meta name="viewport" content="width=device-widthh, initial-scale=1">
 
 #container {
 	display: grid;
@@ -13,7 +9,7 @@ ul.demo {
 		"main main main main"
 		"footer footer footer footer";
 	max-width:  960px;
-
+padding: 150px;
 	margin: 0 auto;
 }
 
@@ -23,7 +19,7 @@ ul.demo {
 	grid-row: 1;
 	font-family: 'times';
 	font-size: 22px;
-	/*background-color: Lavender;*/
+	background-color: Lavender;
 }
 
 	
@@ -33,7 +29,7 @@ ul.demo {
 #sidebar {
 	grid-area:sidebar;
 
-	/*background-color: lightcyan*/
+	background-color: lightcyan;
 }
 
 #main { 
@@ -71,4 +67,9 @@ ul.demo {
 			"sidebar sidebar sidebar"
 			"footer footer footer";
 	}
+@media only screen and (max-width: 1600px) {
+	body {
+		background: green;
+	}
+
 	}
