@@ -5,6 +5,7 @@ window.addEventListener('load', function() {
 	const passwordAuth = document.getElementById('password');
 	const signUpButton = document.getElementById('sign-up');
 	const logInButton = document.getElementById('login');
+    const googleLogIn = document.getElementById('google-login');
 	const logOutButton = document.getElementById('logout');
 	
 	firebase.auth().onAuthStateChanged(function(user) {
@@ -18,8 +19,6 @@ window.addEventListener('load', function() {
 			document.body.classList.remove('user-logged-in');
 		}
 	});
-	
-
 	
 	// new user
 	signUpButton.addEventListener('click', function() {
@@ -65,11 +64,17 @@ window.addEventListener('load', function() {
 		document.getElementById('user-info').style.display = 'none';
 		document.getElementById('auth').style.display = 'block';
 	});
+    
+    //log in with google
+    
+    var googleProv = new firebase.auth.GoogleAuthProvider();
+    
+    
+    googleLogIn.addEventListener('click', function() {
+		firebase.auth().signInWithRedirect(googleProv);
+	});
+    
 	
 });
-
-
-
-
 
 
