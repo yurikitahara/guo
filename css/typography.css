@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700|Montserrat:300,300i,400,700');
+@import url('https://fonts.googleapis.com/css?family=Nobile:400,400i,500,700|Raleway:300,400,400i');
+
+body{
+  font-size: 18px;
+}
+.font-one {
+  background-color: #F5F5F5;
+  font-family: 'Hind Vadodara', sans-serif;
+  margin-bottom: 2em;
+}
+.font-one .text h1{
+font-size: 18px;
+font-weight: 300;
+
+}
+
+.font-one .user {
+  font-size: 13px;
+  font-weight: 500;
+  color: #DC143C;
+}
+.font-one .date{
+  font-size: 13px;
+  font-weight: 300;
+}
+
+
+.font-two {
+  background-color: #F5F5F5;
+
+  margin-bottom: 2em;
+}
+.font-two .text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+padding-bottom: 10px;
+}
+.font-two .text h1{
+font-size: 20px;
+
+font-family: 'Heebo', sans-serif;
+}
+
+.font-two .user {
+  font-size: 14px;
+font-weight: 400;
+font-family: 'Montserrat', sans-serif;
+}
+.font-two .date{
+  font-size: 13px;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#main{
+  width:27%;
+   float: left;
+   margin-right: 2em;
+}
+#main2{
+    margin-right: 2em;
+   float: left;
+  width: 27%;
+}
+#main3{
+
+   float: left;
+  width: 27%;
+}
+.row:after {
+
+    display: table;
+    clear: both;
+}
+.font-three {
+  background-color: #F5F5F5;
+
+  margin-bottom: 2em;
+}
+.font-three .text {
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 16px;
+padding-bottom: 10px;
+font-weight: 300;
+}
+.font-three .text h1{
+  color: #2F4F4F;
+font-size: 20px;
+font-family: 'Nobile', sans-serif;
+font-style: italic;
+}
+
+.font-three .user {
+  font-size: 14px;
+font-weight: 400;
+font-family: 'Nobile', sans-serif;
+font-style: italic;
+  color: 	#2F4F4F;
+}
+.font-three .date{
+  font-size: 12px;
+
+  font-family: 'Raleway', sans-serif;
+}
