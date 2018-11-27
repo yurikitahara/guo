@@ -8,7 +8,18 @@
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-storage.js"></script>
-
+	<script>
+		// Initialize Firebase
+		var config = {
+		apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+		authDomain: "guoguo-a13d6.firebaseapp.com",
+		databaseURL: "https://guoguo-a13d6.firebaseio.com",
+		projectId: "guoguo-a13d6",
+		storageBucket: "guoguo-a13d6.appspot.com",
+		messagingSenderId: "242075501112"
+		};
+		firebase.initializeApp(config);
+	</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -43,8 +54,17 @@
 				<div id="profile-age">
 					<p>What is your age?</p>
 					<input type="text" id="age" placeholder="Age"/>
-					<input type="button" value="done" onclick="write_age();"/>
+					<input type="button" value="done" id="age-btn"/>
 				</div>
+				<div id="display-age"></div>
+
+				<div id="profile-bio">
+					<p>Bio?</p>
+					<input type="text" id="bio" placeholder="bio"/>
+					<input type="button" value="done" id="bio-btn"/>
+				</div>
+				<div id="display-bio"></div>
+
 			</div>
 		</div>
 
