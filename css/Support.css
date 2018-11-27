@@ -1,0 +1,36 @@
+body {
+    padding: 20%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+bottom: {
+    background-color: #651FFF;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 35px;
+    &:hover {
+        background-color: darken(#651FFF, 30%);
+    }
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0 0 15px;
+}
+
+
+}
+p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5%;
+    margin: 0;
+    background-color: #F2F2F2;
+}
