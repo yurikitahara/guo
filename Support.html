@@ -1,7 +1,9 @@
 <html>
     
 	<head>
+       <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-Support.js"></script>
        <link rel="stylesheet" type="text/css" href="css/Support.css">
+
     </head>
 			    
 <body>
@@ -20,13 +22,26 @@
           <p>Phone: 914 813 3312</p>
           <p>Email: Supportme@guo.com</p>
       </div>
-      
-      <div class="row2">
-        <button class="btn" type="submit">Send</button>
+    
+    <h2>Frequently asked Questions</h2>
+        <form action="/action_page.php">
+          <select name="Q&A">
+            <option value="forgot password">I forgot my password?</option>
+            <option value="change to date">Can I change the date to my event?</option>
+            <option value="send a notification">I would like to notify all attendies of location change?</option>
+            <option value="addphotos">How can I add a photo?</option>
+          </select>
+            <br><br>
+            <input type="submit">
+       </form>
+
+      <textarea rows="8" cols="50" id="support-question">
+      </textarea> 
+    
+          <div class="row2">
+        <button class="btn" type="submit" id="send">Send</button>
       </div>
-      <div class="row3">
-        <container class="box">How can we help</container>
-      </div>    
+    
 </div> 
         
 <div class="row4">

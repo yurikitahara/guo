@@ -17,6 +17,10 @@ bottom: {
     &:hover {
         background-color: darken(#651FFF, 30%);
     }
+box-sizing: border-box 30%;
+    border-color: aqua;
+    background-color: azure;
+    
 }
 
 h1 {
