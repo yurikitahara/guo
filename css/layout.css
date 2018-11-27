@@ -4,9 +4,7 @@ html{
 	font-family: 'PT Sans', sans-serif;
 }
 
-body{
-	margin: 0;
-}
+
 
 /*header*/
 
@@ -310,7 +308,7 @@ body{
 
 .popupTitle{
 	font-size: 3em;
-	border-bottom: 4px solid #91cdf5;
+	border-bottom: 4px solid #91cdf5!important;
 }
 
 .popupDescription{

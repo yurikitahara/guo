@@ -24,9 +24,9 @@
 
 body {
   font-weight: 300;
-  background: #1258;
-  color: #fff;
-  overflow: hidden;
+  /*background: #1258;*/
+  /*overflow: hidden;*/
+  margin: 0;
 }
 
 /* The Modal (background) */
