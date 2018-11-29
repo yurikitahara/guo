@@ -1,11 +1,3 @@
-
-html{
-	background-color: #e9e9e9;
-	font-family: 'PT Sans', sans-serif;
-}
-
-
-
 /*header*/
 
 .header{
@@ -17,82 +9,18 @@ html{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items:center;
-	
 }
 
-.searchBarContainer{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items:center;
-
-
-}
-#searchButton{
-	
-	/*margin-left:50px;*/
-	width: auto;
-	height: 2em;
-	padding: 0px 5px;
-	background-color: #f3d24f;
-	text-decoration: none;
-	vertical-align: middle;
-	border-width: 0px;
-	font-size: 1em;
-	border-radius: 0px 5px 5px 0px;
-}
-
-
-
-.searchBar{
-	width: 25em;
-	height: 2em;
-	background-color: white;
-	/*box-sizing: border-box;*/
-    /*border: 0px solid #f3d24f;*/
-	border-radius: 5px 0px 0px 5px;
-	border-width: 0px;
-	padding-left: 30px;
-	font-size: 1em;
-	background-image: url('images/search.svg');
-	background-size:20px auto;
-	background-position: 5px 5px; 
-    background-repeat: no-repeat;
-}
-
-.logoSize{
-	width:150px;
-	padding-right: 3em;
-	padding-left: 3em;
-	
-}
-
-.profile-photo-icon{
-	width: 30px;
-	margin-right: 5px;
-}
-
-.hey{
-	margin-left: auto;
-	margin-right: 10px;
-}
-
-.arrow{
-	width: 15px;
-	margin-right: 3em;
-}
 
 
 
 /*ads*/
-.flexContiner{
+#events {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: flex-end;
 	justify-content: center;
-	
 	
 }
 
@@ -151,35 +79,6 @@ html{
 }
 
 
-
-
-
-
-
-/*==========FOOTER*/
-.footer{
-  text-align: center;
-  box-sizing: border-box;
-  position: relative;
-  bottom: 0;
-  /*width: 100%;*/
-  display: block;
-  left: 0;
-  margin-top: 50px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #91cdf5;
-  color: #fff;
-}
-
-.footerItems{
-	width:90px;
-	margin: 0 15px;
-	/*filter: grayscale(100%);*/
-}
-
-
-
 /*==========POPUP POST*/
 
 
@@ -215,16 +114,6 @@ html{
   z-index: 900;
 }
 
-.open{
-  	/*border-style: solid;*/
-  	/*border-width: 5px;*/
-  	/*border-color: red;*/
-  	/*width: 200px;*/
-  	/*height: 300px;*/
-  	/*cursor: pointer;*/
-  	/*background-color: blue;*/
-  	/*z-index: 900;*/
-  }
 
 .popup-content{
 	width: 100%;
@@ -255,10 +144,10 @@ html{
 }
 
 @media only screen and (max-width: 700px){
-	.containerForLeftside{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
+	.containerForLeftside {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 }
 
@@ -295,6 +184,7 @@ html{
     cursor: pointer;
     z-index: 999; 
 }
+
 .popupButtonMessage:hover{
 	background-color: #91cdf5;
    
@@ -376,19 +266,6 @@ html{
   visibility:visible;
   z-index: 900;
 }
-
-.open2{
-  	/*border-style: solid;*/
-  	/*border-width: 5px;*/
-  	/*border-color: red;*/
-  	/*width: 200px;*/
-  	/*height: 300px;*/
-  	/*cursor: pointer;*/
-  	/*background-color: blue;*/
-  	/*z-index: 900;*/
-  }
-
-
 
 
 .popupContainerNewPost{
