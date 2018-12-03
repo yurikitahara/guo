@@ -1,16 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Guo Event Location</title>
-    
-        <link href="css/LOCATION.CSS" type="text/css">
-    </head>
-    
-    <body>
-        <input id="event-location">
+<head>
+	<title>Guo - Profile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-storage.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/LOCATION.CSS">
+</head>
+<body>
+	
+	<h1>Select Location</h1>
+        
+        <input type="text" name="location" id="location-input" list="firebase-locations">
+        <datalist id="firebase-locations">
+            <option>apple</option>
+            <option>aorange</option>
+            <option>abanana</option>
+            <option>agrape</option>
+            <option>alemon</option>
+        </datalist>
         
         <button id="location-button">Search</button>
-    
-    
-    </body>
+	
+	<script src="js/LOCATION.JS"></script>
+</body>
 </html>
+	
+	
+	
+	
+	
+	
