@@ -26,24 +26,26 @@
 <body>
 
 	<div id="container">
-       <button id="myBtn">Sign In</button>
-       <div id="myModal" class="modal">
 		<div id="header">
 			<h1>Guo</h1>
-             <div class="modal-content">
-             <span class="close">&times;</span>
-             <p>Close</p>
-        </div>
 			<div id="auth">
-				<input type="text" id="username" placeholder="Username">
-				<input type="text" id="email" placeholder="Email">
-				<input type="password" id="password" placeholder="Password">
-				<button id="sign-up" class="button">Sign Up</button>
-				<button id="login" class="button">Log In</button>
+				<input type="text" id="user-sign-up" placeholder="Username">
+				<input type="text" id="email-sign-up" placeholder="Email">
+				<input type="password" id="password-sign-up" placeholder="Password">
+				<button id="sign-up">Sign Up</button>
+				<br>
+				<input type="text" id="email-log-in" placeholder="Email">
+				<input type="password" id="password-log-in" placeholder="Password">
+				<button id="login">Log In</button>
+
+				<br>
+				<button id="google-login">Log In With Google</button>
+				<br>
+				<span class="close">&times;</span>
 			</div>
 			<div id="user-info">
 				<span id="display-name"></span>
-				<button id="logout" class="button">Log Out</button>
+				<button id="logout">Log Out</button>
 			</div>
 		</div>
 
@@ -53,7 +55,7 @@
 				<p id="profile-name"></p>
 				<img id="profile-photo" width="200">
 
-				<div id="profile-photo">
+				<div id="profile-photo-input">
 					<p>Add a image for your profile:</p>
 					<input type="file"  id="profile-photo-file" accept="image/gif, image/jpeg, image/png" >
 					<button id="submit-photo" class="button">Submit Profile Photo</button>
@@ -67,7 +69,7 @@
 
 				<div id="profile-bio">
 					<p>Tell us about yourself?</p>
-					<input type="text" class="button" id="bio" placeholder="bio"/>
+					<input type="text" class="inputfile" id="bio" placeholder="bio"/>
 					<input type="button" class="button" value="done" id="bio-btn"/>
 				</div>
 				<div id="display-bio"></div>
@@ -92,10 +94,6 @@
 					<input type="button" class="button" value="done" id="interest-btn">
 				</div>
 				<div id="display-interest"></div>
-
-
-
-
 			</div>
 		</div>
 
