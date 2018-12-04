@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title>Guo - Location</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+		authDomain: "guoguo-a13d6.firebaseapp.com",
+		databaseURL: "https://guoguo-a13d6.firebaseio.com",
+		projectId: "guoguo-a13d6",
+		storageBucket: "",
+		messagingSenderId: "242075501112"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="css/LOCATION.CSS">
+</head>
+<body>
+	
+	<h1>Select Location</h1>
+    
+    <div id="field"> 
+        <label for="location" id="location-label">Location:</label>
+        <input type="text" name="location" id="location-input" list="firebase-locations" placeholder="Name of Location">
+        <datalist id="firebase-locations"></datalist>
+        <button id="search">Search</button>
+        <br>
+        <label for="address" id="address-label">Address:</label>
+        <input type="text" name="address" id="address-input" placeholder="Location Address">
+        <button id="add">Add</button>
+        </div>   
+	
+	   <script src="js/LOCATION.JS"></script>
+
+</body>
+</html>
+	
+	
+	
+	
+	
+	
