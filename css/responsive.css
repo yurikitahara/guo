@@ -32,6 +32,7 @@
 
 /*desktop */
 @media only screen and (max-width: 1600px) {
+<<<<<<< HEAD
     body {
         background: #006400;
     }
@@ -40,10 +41,17 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+=======
+	#container {
+		grid-template-columns: repeat(4, 1fr);
+		/*grid-template-rows: repeat(4, 1fr);*/
+	}
+>>>>>>> b9a1a8fae7056d94f53936aec95dbf98cdd474b3
 }
 
 /*tablet*/
 @media only screen and (max-width: 960px) {
+<<<<<<< HEAD
     body {
         background: #33cc33;
     }
@@ -59,8 +67,11 @@
 
     /*
 	.eventsContainer {
+=======
+	#container  {
+>>>>>>> b9a1a8fae7056d94f53936aec95dbf98cdd474b3
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(4, 1fr);
+		/*grid-template-rows: repeat(4, 1fr);*/
 	}
 */
 }
@@ -69,6 +80,7 @@
 
 /*mobile*/
 @media only screen and (max-width: 480px) {
+<<<<<<< HEAD
     body {
         background: #9ACD32;
     }
@@ -81,9 +93,15 @@
 
     /*
 	.eventsContainer {
+=======
+	#container {
+>>>>>>> b9a1a8fae7056d94f53936aec95dbf98cdd474b3
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(4, 1fr);
+		/*grid-template-rows: repeat(4, 1fr);*/
 	}
+<<<<<<< HEAD
 */
+=======
+>>>>>>> b9a1a8fae7056d94f53936aec95dbf98cdd474b3
 
 }

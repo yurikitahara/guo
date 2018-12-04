@@ -76,16 +76,7 @@ window.addEventListener('load', function() {
 		function likeOrUnLike(isLike) {
 			if (firebase.auth().currentUser) {
 				const uid = firebase.auth().currentUser.uid;
-				//////
-                
-                
-                
-                const likeRef = firebase.database().ref('posts').child(key).child('likes').child(uid);
-                
-                
-                
-                
-                ////////
+				const likeRef = firebase.database().ref('posts').child(key).child('likes').child(uid);
 				let likePromise;
 				if (isLike) {
 					likePromise = likeRef.set(true);
