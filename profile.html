@@ -8,46 +8,92 @@
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-storage.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+		apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+		authDomain: "guoguo-a13d6.firebaseapp.com",
+		databaseURL: "https://guoguo-a13d6.firebaseio.com",
+		projectId: "guoguo-a13d6",
+		storageBucket: "guoguo-a13d6.appspot.com",
+		messagingSenderId: "242075501112"
+		};
+		firebase.initializeApp(config);
+	</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    
 </head>
-    
+
 <body>
 
-</div>
 	<div id="container">
-       <button id="myBtn">Sign In</button> 
-       <div id="myModal" class="modal">
 		<div id="header">
 			<h1>Guo</h1>
-             <div class="modal-content">
-             <span class="close">&times;</span>
-             <p>Close</p>
-        </div>
 			<div id="auth">
-				<input type="text" id="username" placeholder="Username">
-				<input type="text" id="email" placeholder="Email">
-				<input type="password" id="password" placeholder="Password">
+				<input type="text" id="user-sign-up" placeholder="Username">
+				<input type="text" id="email-sign-up" placeholder="Email">
+				<input type="password" id="password-sign-up" placeholder="Password">
 				<button id="sign-up">Sign Up</button>
+				<br>
+				<input type="text" id="email-log-in" placeholder="Email">
+				<input type="password" id="password-log-in" placeholder="Password">
 				<button id="login">Log In</button>
+
+				<br>
+				<button id="google-login">Log In With Google</button>
+				<br>
+				<span class="close">&times;</span>
 			</div>
 			<div id="user-info">
 				<span id="display-name"></span>
 				<button id="logout">Log Out</button>
 			</div>
 		</div>
-		
+
 		<div id="main">
 			<div id="profile">
 				<h2>My Profile</h2>
 				<p id="profile-name"></p>
 				<img id="profile-photo" width="200">
-				
-				<div id="profile-photo">
+
+				<div id="profile-photo-input">
 					<p>Add a image for your profile:</p>
-					<input type="file" id="profile-photo-file" accept="image/gif, image/jpeg, image/png">
-					<button id="submit-photo">Submit Profile Photo</button>
+					<input type="file"  id="profile-photo-file" accept="image/gif, image/jpeg, image/png" >
+					<button id="submit-photo" class="button">Submit Profile Photo</button>
 				</div>
+				<div id="profile-age">
+					<p>What is your age?</p>
+					<input type="text" id="age" placeholder="Age"/>
+					<input type="button" value="done" id="age-btn"/>
+				</div>
+				<div id="display-age"></div>
+
+				<div id="profile-bio">
+					<p>Tell us about yourself?</p>
+					<input type="text" class="inputfile" id="bio" placeholder="bio"/>
+					<input type="button" class="button" value="done" id="bio-btn"/>
+				</div>
+				<div id="display-bio"></div>
+
+				<div id="profile-phone">
+					<p>What is the best number to get in touch with you?</p>
+					<input type="text" id="phone" placeholder="phone" class="inputfile">
+					<input type="button" class="button" value="done" id="phone-btn">
+				</div>
+				<div id="display-phone"></div>
+
+				<div id="profile-location">
+					<p>Where are you located?</p>
+					<input type="text" id="location" placeholder="location" class="inputfile">
+					<input type="button" class="button" value="done" id="location-btn">
+				</div>
+				<div id="display-location"></div>
+
+				<div id="profile-interest">
+					<p>What events are you mainly interested in?</p>
+					<input type="text" id="interest" placeholder="interest" class="inputfile">
+					<input type="button" class="button" value="done" id="interest-btn">
+				</div>
+				<div id="display-interest"></div>
 			</div>
 		</div>
 
@@ -60,14 +106,9 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<script src="js/auth.js"></script>
 	<script src="js/profile.js"></script>
+	<script src="js/information.js"></script>
 </body>
 </html>
-	
-	
-	
-	
-	
-	
