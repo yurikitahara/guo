@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>Guo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+		authDomain: "guoguo-a13d6.firebaseapp.com",
+		databaseURL: "https://guoguo-a13d6.firebaseio.com",
+		projectId: "guoguo-a13d6",
+		storageBucket: "",
+		messagingSenderId: "242075501112"
+	  };
+	  firebase.initializeApp(config);
+        
+    </script>
+    
+    
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+ </head>
+      
+<body class="no-user">
+	
+	<div id="container">
+		<div id="header">
+			<h1>Guo</h1>
+			<div id="auth">
+				<input type="text" id="username"   placeholder="Username">
+				<input type="text" id="email" placeholder="Email">
+				<input type="password" id="password" placeholder="Password">
+				<button id="sign-up">Sign Up</button>
+				<button id="login">Log In</button>
+                <button id="google-login">Log In With Google</button>
+			</div>
+			<div id="user-info">
+				<span id="display-name"></span>
+				<button id="logout">Log Out</button>
+			</div>
+		</div>
+		
+		<div id="sidebar">
+			<ul id="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li>Friends</li>
+				<li>Top Users</li>
+			</ul>
+		</div>
+
+</header <!-- Container (Contact Section) -->
+          <h1> Support </h1>
+    <div class="ourinfo">
+        <div class="row1">
+            <p>How can we help? We want to hear from you</p>
+            <p>Address: New York, NY USA</p>
+            <p>Phone: 914 813 3312</p>
+            <p>Email: Supportme@guo.com</p>
+        </div>
+
+        <h2>Frequently asked Questions</h2>
+        <form action="/action_page.php">
+            <select name="Q&A">
+                <option value="forgot password">I forgot my password?</option>
+                <option value="change to date">Can I change the date to my event?</option>
+                <option value="send a notification">I would like to notify all attendies of location change?</option>
+                <option value="addphotos">How can I add a photo?</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+
+        <textarea rows="8" cols="50" id="support-question">
+        </textarea>
+
+        <br>
+        <button id="send">Send</button>
+
+        <div class="row4">
+            <article>
+                <p id="greeting" style="display:none;">Thank you for providing your feed back.</p>
+            </article>
+
+        </div>
+        <script src="js/auth.js"></script>
+        <script src="js/Support.js"></script>
+</body>
+
+</html>
