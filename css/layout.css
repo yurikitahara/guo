@@ -1,0 +1,30 @@
+#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: max-content max-content max-content;
+	grid-template-areas:
+		"header header header sidebar"
+		"main main main main"
+		"footer footer footer footer";
+	max-width:  960px;
+	margin: 0 auto;
+}
+
+#header {
+	grid-area: header;
+	grid-column: 1 / span 3;
+	grid-row: 1;
+}
+
+#sidebar {
+	grid-area:sidebar;
+
+}
+
+#main { 
+	grid-area: main;
+}
+
+#footer {
+	grid-area: footer;
+}

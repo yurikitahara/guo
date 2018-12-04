@@ -9,8 +9,9 @@ window.addEventListener('load', function() {
 	
 	const signUpButton = document.getElementById('sign-up');
 	const logInButton = document.getElementById('login');
-    
-	const googleLogIn = document.getElementById('google-login');
+
+    const googleLogIn = document.getElementById('google-login');
+
 	const logOutButton = document.getElementById('logout');
 	
 	firebase.auth().onAuthStateChanged(function(user) {

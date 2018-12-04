@@ -8,14 +8,22 @@
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-storage.js"></script>
-	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    
 </head>
+    
 <body>
-	
+
+</div>
 	<div id="container">
+       <button id="myBtn">Sign In</button> 
+       <div id="myModal" class="modal">
 		<div id="header">
 			<h1>Guo</h1>
+             <div class="modal-content">
+             <span class="close">&times;</span>
+             <p>Close</p>
+        </div>
 			<div id="auth">
 				<input type="text" id="username" placeholder="Username">
 				<input type="text" id="email" placeholder="Email">
@@ -48,6 +56,7 @@
 				<li><a href="index.html">Home</a></li>
 				<li>Friends</li>
 				<li>Top Users</li>
+                <li><a href="Support.html">Support</a></li>
 			</ul>
 		</div>
 	</div>
