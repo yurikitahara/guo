@@ -1,4 +1,4 @@
-//window.addEventListener('load', function() {
+window.addEventListener('load', function() {
 
 	const db = firebase.database();
 	var input = document.getElementById('location-input');
@@ -15,27 +15,21 @@
         var dbLocation = document.createElement('option');
         dbLocation.innerHTML = loc.name;
         locationList.append(dbLocation);
-        
-        console.log(dbLocation.value);
-        
-        search.addEventListener("click", function(){
-            
-            if(input.value != dbLocation.value){
-                const addInput = document.getElementById('address-input');
-                const createLoc = document.getElementById('add');
-                document.getElementById('address-label').style.display = "block";
-                addInput.style.display = "block";
-                createLoc.style.display = "block";
-                document.getElementById('search').style.display = "none";
-                
-                createLoc.addEventListener("click", function(){
-                    locationsRef.push({
-                        name: input.value,
-                        address: addInput.value
-                    });
-                    });
-                };
-        });
 	});
+    
+    search.addEventListener("click", function(){
+        const addInput = document.getElementById('address-input');
+        const createLoc = document.getElementById('add');
+        document.getElementById('address-label').style.display = "block";
+        addInput.style.display = "block";
+        createLoc.style.display = "block";
+        document.getElementById('search').style.display = "none";
 
-//});
+        createLoc.addEventListener("click", function(){
+            locationsRef.push({
+                name: input.value,
+                address: addInput.value
+            });
+        });
+    });
+});
