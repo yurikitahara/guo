@@ -6,4 +6,5 @@
 */
 
 @import 'interface.css';
-@import 'responsive.css';
+/*@import 'responsive.css';*/
+@import 'Support.css';
