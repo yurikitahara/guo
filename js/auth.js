@@ -1,11 +1,16 @@
 window.addEventListener('load', function() {
 	
-	const userNameAuth = document.getElementById('username');
-	const emailAuth = document.getElementById('email');
-	const passwordAuth = document.getElementById('password');
+	const userNameAuth = document.getElementById('user-sign-up');
+	const emailAuth = document.getElementById('email-sign-up');
+	const passwordAuth = document.getElementById('password-sign-up');
+	
+	const emailLogIn = document.getElementById('email-log-in');
+	const passwordLogIn = document.getElementById('password-log-in');
+	
 	const signUpButton = document.getElementById('sign-up');
 	const logInButton = document.getElementById('login');
-    const googleLogIn = document.getElementById('google-login');
+    
+	const googleLogIn = document.getElementById('google-login');
 	const logOutButton = document.getElementById('logout');
 	
 	firebase.auth().onAuthStateChanged(function(user) {
@@ -36,8 +41,7 @@ window.addEventListener('load', function() {
 				displayName: userNameAuth.value		
 			};
 			ref.set(userInfo);
-			credential.user.updateProfile(userInfo)
-				.then(displayUserInfo);
+			credential.user.updateProfile(userInfo);
 		});
 		
 		// promise error
@@ -48,11 +52,10 @@ window.addEventListener('load', function() {
 	
 	// log in
 	logInButton.addEventListener('click', function() {
-		const email = emailAuth.value;
-		const password = passwordAuth.value;
+		const email = emailLogIn.value;
+		const password = passwordLogIn.value;
 		const auth = firebase.auth();
 		const signInPromise = auth.signInWithEmailAndPassword(email, password);
-		signInPromise.then(displayUserInfo);
 		signInPromise.catch(function(error) {
 			alert(error.message);
 		});
