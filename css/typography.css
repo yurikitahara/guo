@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Nobile:400,400i,500,700|Raleway:300,400,400i');
+
+body {
+	font-size: 18px;
+	font-family: 'Nobile', sans-serif;
+}
+
+input, button {
+	font-family: 'Raleway', sans-serif;
+}
+
+.text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h1 {
+	/*color: #2F4F4F;*/
+	font-size: 20px;
+	font-family: 'Nobile', sans-serif;
+	font-style: italic;
+}
+
+.user {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Nobile', sans-serif;
+	font-style: italic;
+	/*color: #2F4F4F;*/
+}
+
+.date {
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+}
