@@ -3,23 +3,35 @@
     padding: 0.5em;
     margin: 0.25em;
 }
-#search{
-border: 20px solid pink;
-  border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
-  border-image-slice: 20 22;
-  border-image-repeat: round;
+
+#search1 {
+    border: 20px solid pink;
+    border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
+    border-image-slice: 20 22;
+    border-image-repeat: round;
+    width: 50%;
+    position:relative;
+    left: 20%;
+    
+
 }
 
-.result-title {}
+.result-title {
 
-#main{
+}
+
+#main {
     text-align: center;
-     color: gray;
+    color: gray;
+
+    
+    
 }
- by 
-.result-time {
+
+by .result-time {
     color: blue;
 }
+
 .result-location {
     color: green;
 }
@@ -28,17 +40,18 @@ border: 20px solid pink;
     color: lightgreen;
 }
 
-
 #query {
     font-size: 2em;
     border: none;
     width: 100%;
     border-bottom: 2px solid black;
+    text-align: center;
 }
+
 #submit {
     font-size: 12pix;
     border: 4em;
-   padding: 0.5em;
+    padding: 0.5em;
     margin: 0.25em;
     border: 2px solid black;
 }

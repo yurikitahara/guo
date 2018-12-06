@@ -1,20 +1,4 @@
-window.addEventListener('load', function () {
-    //search code goes here
-    const submit = document.getElementById('submit');
-    const query = document.getElementById('query');
-    const results = document.getElementById('results');
-    submit.addEventListener('click', search);
-    query.addEventListener('keydown', function (event) {
-        if (event.which == 13) {
-            search();
-        }
-    });
-
-    function search() {
-        results.innerHTML = '';
-        const q = query.value;
-        //        console.log(q);
-        const promise = firebase.database()
+const promise = firebase.database()
             .ref("events")
             .orderByChild(`tags/${q}`)
             .equalTo(true);
