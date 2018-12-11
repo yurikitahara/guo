@@ -1,35 +1,33 @@
 <!doctype html>
-<!-- test -->
 <html>
-
 <head>
-	<title>Guo</title>
+	<title>Guo - Profile</title>
 	<meta charset="utf-8">
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-storage.js"></script>
 	<script>
 		// Initialize Firebase
 		var config = {
-			apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
-			authDomain: "guoguo-a13d6.firebaseapp.com",
-			databaseURL: "https://guoguo-a13d6.firebaseio.com",
-			projectId: "guoguo-a13d6",
-			storageBucket: "",
-			messagingSenderId: "242075501112"
+		apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+		authDomain: "guoguo-a13d6.firebaseapp.com",
+		databaseURL: "https://guoguo-a13d6.firebaseio.com",
+		projectId: "guoguo-a13d6",
+		storageBucket: "guoguo-a13d6.appspot.com",
+		messagingSenderId: "242075501112"
 		};
 		firebase.initializeApp(config);
 	</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="no-user">
+<body>
+
 	<div id="container">
 		<div id="header">
-			<h1>Guoooooo</h1>
-			<button id="open-auth">Sign In</button>
+			<h1>Guo</h1>
 			<div id="auth">
 				<input type="text" id="user-sign-up" placeholder="Username">
 				<input type="text" id="email-sign-up" placeholder="Email">
@@ -51,24 +49,43 @@
 			</div>
 		</div>
 
+		<div id="main">
+
+
+
+				<div id="profile-review">
+					<p>leave a comment</p>
+					<input type="text" id="review" placeholder="review"/>
+					<input type="button" value="done" id="review-btn"/>
+				</div>
+				<div id="display-review"></div>
+
+        <div id="write-post">
+        	<textarea id="post-body" placeholder="What's on your mind?"></textarea>
+        	<br>
+        	<button id="submit-post">Publish</button>
+        </div>
+
+
+
+
+
 		<div id="sidebar">
 			<ul id="menu">
-				<li><a href="profile.html">Profile</a></li>
-					<li><a href="reviews.html">Reviews</a></li>
-				<li><a href="search.html">Search</a></li>
-				<li><a href="LOCATION.HTML">Locations</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li>Friends</li>
+				<li>Top Users</li>
                 <li><a href="Support.html">Support</a></li>
-				<li><a href="type.html">Type</a></li>
 			</ul>
 		</div>
-
-		<div id="main"></div>
-		<div class="footer"></div>
 	</div>
 
-
-
 	<script src="js/auth.js"></script>
-	<script src="js/modal.js"></script>
+	<script src="js/profile.js"></script>
+	<script src="js/information.js"></script>
+  <script src="js/review.js"></script>
+
+
+
 </body>
 </html>
