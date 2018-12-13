@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Charmonman:700');
+
+
 /*
 	font-family: 'Charmonman', cursive;
 */
-@import url('https://fonts.googleapis.com/css?family=Dosis:800');
+
+
+
 /*
 font-family: 'Dosis', sans-serif;
 */
-body {
-	font-size: 20px;
-	line-height: 2;
-   font-family: 'Dosis', sans-serif;
 
+#main {
+    font-size: 20px;
+    line-height: 2;
+    
 }
 
 .result {
-    border: 1px solid white;
+    border: 3px solid gray;
+    border-radius:30px;
     padding: 0.5em;
-    margin: 0.25em;
+    margin: 1em;
+    background-color:lightcyan;
     
 }
 
@@ -25,53 +30,56 @@ body {
     border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
     border-image-slice: 20 22;
     border-image-repeat: round;
-    width: 50%;
-    position:relative;
-    left: 20%;
-    
-font-family: 'Charmonman', cursive;
-	font-size: 1.5em;
+    width: 20%;
+    position: relative;
+    left: 37%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  
+    font-size: 1.5em;
 }
 
 .result-title {
+font-size: 25px;
+font-weight: bold;
 
 }
 
 #main {
     text-align: center;
-    color: gray;
-
-    
-    
+    color: ;
 }
 
 by .result-time {
-    color: blue;
+    color: pink;
 }
 
 .result-location {
-    font-family: 'Dosis', sans-serif;
-    color: black;
+ 
+    color: darkred;
 }
 
 .result-duration {
-    color: black;
-    font-family: 'Charmonman', cursive;
+    color: grey;
+    font-size: 0.9em;
+  
 }
 
 #query {
-    font-size: 2em;
+    font-size: 1.2em;
     border: none;
     width: 100%;
     border-bottom: 2px solid black;
     text-align: center;
+    background-color: pink;
+    color: darkslategrey;
+  
 }
 
 #submit {
-    font-size: 12pix;
+    font-size: 15px;
     border: 4em;
     padding: 0.5em;
     margin: 0.25em;
     border: 2px solid black;
 }
-
