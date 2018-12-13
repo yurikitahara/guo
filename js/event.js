@@ -1,13 +1,14 @@
+const eventId = location.search.split('=')[1];
+const eventdiv = document.getElementById('event');
+
 const promise = firebase.database()
             .ref("events")
-            .orderByChild(`tags/${q}`)
-            .equalTo(true);
+            .child(eventId);
 
-        promise.once("value", function (events) {
-            for (var key in events.val()) {
-                console.log(key);
-                createResult(key, events.val()[key]);
-            }
+        promise.once("value", function (event) {
+            console.log(event.val())
+            createResult(event.key, event.val());
+
         });
 
         function createResult(key, event) {
@@ -19,16 +20,6 @@ const promise = firebase.database()
             const link = document.createElement('a');
             title.classList.add('result-title');
             link.href = `event.html?id=${key}`;
-            
-            /*
-                get id: 
-                location.search.split('=')[1]
-                firebase.database().ref('events').child(id);
-                
-                event.html duplicate
-                event.js
-                event.css
-            */
             
             
             link.textContent = event.description;
@@ -53,8 +44,6 @@ const promise = firebase.database()
             result.appendChild(duration);
             
             // append new result to results
-            results.appendChild(result);
+            eventdiv.appendChild(result);
             
         }
-    }
-});

@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman:700');
+/*
+	font-family: 'Charmonman', cursive;
+*/
+@import url('https://fonts.googleapis.com/css?family=Dosis:800');
+/*
+font-family: 'Dosis', sans-serif;
+*/
+body {
+	font-size: 20px;
+	line-height: 2;
+   font-family: 'Dosis', sans-serif;
+
+}
+
 .result {
     border: 1px solid white;
     padding: 0.5em;
     margin: 0.25em;
+    
 }
 
 #search1 {
@@ -13,7 +29,8 @@
     position:relative;
     left: 20%;
     
-
+font-family: 'Charmonman', cursive;
+	font-size: 1.5em;
 }
 
 .result-title {
@@ -33,11 +50,13 @@ by .result-time {
 }
 
 .result-location {
-    color: green;
+    font-family: 'Dosis', sans-serif;
+    color: black;
 }
 
 .result-duration {
-    color: lightgreen;
+    color: black;
+    font-family: 'Charmonman', cursive;
 }
 
 #query {
@@ -55,3 +74,4 @@ by .result-time {
     margin: 0.25em;
     border: 2px solid black;
 }
+
