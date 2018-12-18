@@ -1,0 +1,113 @@
+<html>
+<head>
+  <title>Guo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+	<script>
+    
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+		authDomain: "guoguo-a13d6.firebaseapp.com",
+		databaseURL: "https://guoguo-a13d6.firebaseio.com",
+		projectId: "guoguo-a13d6",
+		storageBucket: "",
+		messagingSenderId: "242075501112"
+	  };
+	  firebase.initializeApp(config);
+        
+    </script>
+    
+    
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+ </head>
+      
+<body class="no-user">
+	
+	<div id="container">
+<div id="header">
+			<h1>Guoooooo</h1>
+			<button id="open-auth">Sign In</button>
+			<div id="auth">
+				<input type="text" id="user-sign-up" placeholder="Username">
+				<input type="text" id="email-sign-up" placeholder="Email">
+				<input type="password" id="password-sign-up" placeholder="Password">
+				<button id="sign-up">Sign Up</button>
+				<br>
+				<input type="text" id="email-log-in" placeholder="Email">
+				<input type="password" id="password-log-in" placeholder="Password">
+				<button id="login">Log In</button>
+
+				<br>
+				<button id="google-login">Log In With Google</button>
+				<br>
+				<span class="close">&times;</span>
+			</div>
+			<div id="user-info">
+				<span id="display-name"></span>
+				<button id="logout">Log Out</button>
+			</div>
+		</div>
+
+		
+		<div id="sidebar">
+			<ul id="menu">
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li><a href="LOCATION.HTML">Locations</a></li>
+                <li><a href="Support.html">Support</a></li>
+				<li><a href="type.html">Type</a></li>
+                <li><a href="event.html">Map</a></li>
+			</ul>
+		</div>
+        
+        
+
+</header <!-- Container (Event) -->
+        
+    <div class="Event">
+          <title>Google Map API</title>
+    <link href="event.css" rel="stylesheet" type="text/css">
+        
+        
+  <!-- Add Google Maps -->
+        
+
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>
+    
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+    authDomain: "guoguo-a13d6.firebaseapp.com",
+    databaseURL: "https://guoguo-a13d6.firebaseio.com",
+    projectId: "guoguo-a13d6",
+    storageBucket: "guoguo-a13d6.appspot.com",
+    messagingSenderId: "242075501112"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+  <h1>Google Map save data</h1>
+ 
+    <div id="map"></div>
+    <div id="score"></div>
+    <div id="list">
+        <div id="clist"></div>
+    </div>
+    
+    <script src="event.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbj7mkj9pQxtmXbwdkOomLLsobJqkMAbc&libraries=places&callback=initMap"
+    async defer></script>
+       
+     <script src="js/auth.js"></script>
+<!--     <script src="js/Support.js"></script>-->
+</body>
+
+</html>
