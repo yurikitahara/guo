@@ -34,12 +34,13 @@ function initMap() {
                     '<div id="siteNotice">' +
                     '</div>' +
                     '<h1 id="firstHeading" class="firstHeading">'+
-                    event.date + event.description 
+                    event.date + event.description +
                 '</h1>' +
+                    
                     '<div id="bodyContent">' +
-                    '<p><b>User</b>, is looking new event</b></p>' +
-                    '<p><a href="' + url +'">' +event.description +
-                '</p></a>' +
+                    '<p><b>Event</b>, Join us </b></p>' +
+                    '<p><a href="' + url +'">'+
+                '</p></a>' + 
                 '</div>' +
                 '</div>';
 
