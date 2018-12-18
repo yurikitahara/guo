@@ -29,6 +29,10 @@ window.addEventListener('load', function() {
             document.getElementById('profile-interest').style.display = 'none';
             document.getElementById('display-interest').textContent = "My"+ " "+"interests"+" "+ data.interest;
           }
+          if (data.review) {
+            document.getElementById('profile-review').style.display = 'none';
+            document.getElementById('display-review').textContent =  ""+data.review;
+          }
       });
     }
   });
@@ -37,6 +41,7 @@ window.addEventListener('load', function() {
   const phoneBtn = document.getElementById('phone-btn');
   const ageBtn = document.getElementById('age-btn');
   const bioBtn = document.getElementById('bio-btn');
+    const reviewBtn = document.getElementById('review-btn');
   ageBtn.addEventListener('click', function(event) {
     updateInfo('age');
   });
@@ -51,6 +56,9 @@ window.addEventListener('load', function() {
   });
   interestBtn.addEventListener('click', function(event) {
     updateInfo('interest');
+  });
+  reviewBtn.addEventListener('click', function(event) {
+    updateInfo('review');
   });
 
   function updateInfo(info) {
@@ -69,7 +77,14 @@ window.addEventListener('load', function() {
     promise.catch(function(error) {
       console.log(error);
     });
+
+
+
+    
   }
+
+
+
 //just for age//
   // function updatePhone() {
   //   const phone = document.getElementById('phone').value;

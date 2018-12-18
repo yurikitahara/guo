@@ -5,4 +5,9 @@
 @import 'responsive.css';
 @import 'profile.css' ;
 @import 'search.css';
+<<<<<<< HEAD
 @import 'Support.css';
+=======
+@import 'Support.css';
+@import 'messages.css';
+>>>>>>> a13500f6910e9893b74f34f99a9b6910a93e5bdc

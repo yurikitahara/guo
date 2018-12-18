@@ -27,8 +27,8 @@ font-family: 'Dosis', sans-serif;
 
 #search1 {
     border: 20px solid pink;
-    border-image-source: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/hearts-border-image.png);
-    border-image-slice: 20 22;
+    border-image-source: url(https://img.icons8.com/metro/50/000000/star.png);
+    border-image-slice: 125 5;
     border-image-repeat: round;
     width: 20%;
     position: relative;
