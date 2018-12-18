@@ -1,24 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+  
+
+
 /*desktop */
 @media only screen and (max-width: 1600px) {
+<<<<<<< HEAD
+    body {
+        background: #006400;
+    }
+
+    .eventsContainer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+=======
 	#container {
 		grid-template-columns: repeat(4, 1fr);
 		/*grid-template-rows: repeat(4, 1fr);*/
 	}
+>>>>>>> b9a1a8fae7056d94f53936aec95dbf98cdd474b3
 }
 
 /*tablet*/
 @media only screen and (max-width: 960px) {
+<<<<<<< HEAD
+    body {
+        background: #33cc33;
+    }
+
+    .menu,
+    .right {
+        width: 50%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    /*
+	.eventsContainer {
+=======
 	#container  {
+>>>>>>> b9a1a8fae7056d94f53936aec95dbf98cdd474b3
 		grid-template-columns: repeat(3, 1fr);
 		/*grid-template-rows: repeat(4, 1fr);*/
 	}
+*/
 }
+
+
 
 /*mobile*/
 @media only screen and (max-width: 480px) {
+<<<<<<< HEAD
+    body {
+        background: #9ACD32;
+    }
+
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+
+    /*
+	.eventsContainer {
+=======
 	#container {
+>>>>>>> b9a1a8fae7056d94f53936aec95dbf98cdd474b3
 		grid-template-columns: repeat(2, 1fr);
 		/*grid-template-rows: repeat(4, 1fr);*/
 	}
+<<<<<<< HEAD
+*/
+=======
+>>>>>>> b9a1a8fae7056d94f53936aec95dbf98cdd474b3
 
 }

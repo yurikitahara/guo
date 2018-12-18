@@ -6,8 +6,6 @@ window.addEventListener('load', function() {
 
 		// get the file
 		const file = document.getElementById('profile-photo-file').files[0];
-
-
 		
 		// upload to storage
 		const storage = firebase.storage();
@@ -17,7 +15,9 @@ window.addEventListener('load', function() {
 		filePromise.then(function(success) {
 			return success.ref.getDownloadURL();
 		}).then(function(photoURL) {
-			user.updateProfile({photoURL: photoURL});
+			
+            
+            
 			document.getElementById('profile-photo').src = photoURL;
 		});
 
