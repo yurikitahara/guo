@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Guo</title>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+			authDomain: "guoguo-a13d6.firebaseapp.com",
+			databaseURL: "https://guoguo-a13d6.firebaseio.com",
+			projectId: "guoguo-a13d6",
+			storageBucket: "",
+			messagingSenderId: "242075501112"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="no-user">
+	<div id="container">
+		<div id="header">
+			<h1>Guoooooo</h1>
+		</div>
+        
+        <div id="edit-event">
+            <table>
+                <tbody id="event-table">
+                    <tr id="event-date">
+                        <td>Date:</td>
+                        <td id="date-input" class="editable"></td>
+                    </tr>
+                    <tr id="event-time">
+                        <td>Time:</td>
+                        <td id="time-input" class="editable"></td>
+                    </tr>
+                    <tr id="event-duration">
+                        <td>Duration:</td>
+                        <td id="duration-input" class="editable"></td>
+                    </tr>
+                    <tr id="event-location">
+                        <td>Location:</td>
+                        <td id="location-input" class="editable"></td>
+                    </tr>
+                    <tr id="event-description">
+                        <td>Description:</td>
+                        <td id="description-input" class="editable"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="update">Update</button>
+        </div>
+
+		<div id="sidebar">
+			<ul id="menu">
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li>Friends</li>
+				<li>Top Users</li>
+                <li><a href="Support.html">Support</a></li>
+				<li><a href="type.html">Type</a></li>
+			</ul>
+		</div>
+	</div>
+
+	
+
+<!--	<script src="js/auth.js"></script>-->
+<!--	<script src="js/modal.js"></script>-->
+    <script src="js/editEvent.js"></script>
+</body>
+</html>
