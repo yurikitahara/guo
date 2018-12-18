@@ -1,8 +1,8 @@
 window.addEventListener('load', function() {
 	
 	// global variables
-	const postsDiv = document.getElementById('posts');
-	const postRef = firebase.database().ref('posts');
+	const postsDiv = document.getElementById('messages');
+	const postRef = firebase.database().ref('messages');
 	
 	postRef.on('child_added', function(snapshot) {
 		createPost(snapshot.key, snapshot.val());
@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
 		
 		// post container
 		const postDiv = document.createElement('div');
-		postDiv.classList.add('post');
+		postDiv.classList.add('messages');
 		
 		// post text
 		const postText = document.createElement('div');

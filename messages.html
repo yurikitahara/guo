@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- test -->
+<html>
+
+<head>
+    <title>Guo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAtcxJUK-vcibquzhHFSp5KEIov_whAb_w",
+            authDomain: "guoguo-a13d6.firebaseapp.com",
+            databaseURL: "https://guoguo-a13d6.firebaseio.com",
+            projectId: "guoguo-a13d6",
+            storageBucket: "",
+            messagingSenderId: "242075501112"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="no-user">
+
+    <div id="container">
+        <div id="header">
+			<h1>Guoooooo</h1>
+			<button id="open-auth">Sign In</button>
+			<div id="auth">
+				<input type="text" id="user-sign-up" placeholder="Username">
+				<input type="text" id="email-sign-up" placeholder="Email">
+				<input type="password" id="password-sign-up" placeholder="Password">
+				<button id="sign-up">Sign Up</button>
+				<br>
+				<input type="text" id="email-log-in" placeholder="Email">
+				<input type="password" id="password-log-in" placeholder="Password">
+				<button id="login">Log In</button>
+
+				<br>
+				<button id="google-login">Log In With Google</button>
+				<br>
+				<span class="close">&times;</span>
+			</div>
+			<div id="user-info">
+				<span id="display-name"></span>
+				<button id="logout">Log Out</button>
+			</div>
+		</div>
+
+        <div id="main">
+            <!-- your conversations -->
+            <div id="conversations"></div>
+        </div>
+        <div id="sidebar">
+            <ul id="menu">
+                <li>
+                    <button id="messages">My Messages</button>
+                </li>
+
+                <li><a href="profile.html">Profile</a></li>
+                <li>Friends</li>
+                <li>Top Users</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/messages.js"></script>
+</body>
+
+</html>
