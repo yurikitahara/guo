@@ -1,5 +1,6 @@
-@import 'layout.css';
-@import 'typography.css';
-@import 'color.css';
-@import 'interface.css';
-@import 'responsive.css' ;
+
+
+.message-text {
+font-size: 130%;
+font-family: 'Kaushan Script', cursive;
+}
